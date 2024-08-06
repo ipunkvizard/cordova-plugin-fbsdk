@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-fbsdk",
-  "version": "4.0.4",
+  "name": "cordova-plugin-fbsdk-patch",
+  "version": "4.0.5",
   "description": "Cordova Facebook SDK Plugin",
   "cordova": {
-    "id": "cordova-plugin-fbsdk",
+    "id": "cordova-plugin-fbsdk-patch",
     "platforms": [
       "android",
       "ios",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MaximBelov/cordova-plugin-fbsdk"
+    "url": "https://github.com/ipunkvizard/cordova-plugin-fbsdk"
   },
   "keywords": [
     "cordova",
