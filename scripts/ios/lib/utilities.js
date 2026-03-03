@@ -33,7 +33,9 @@ Utilities.getPlistPath = function (context) {
   const common = context.requireCordovaModule('cordova-common');
   const util = context.requireCordovaModule('cordova-lib/src/cordova/util');
   const projectName = new common.ConfigParser(util.projectConfig(util.isCordova())).name();
-  return './platforms/ios/' + projectName + '/' + projectName + '-Info.plist'
+  // cordova-ios 8.0.0 renamed the project directory from the app name to 'App'
+  const dirName = fs.existsSync('./platforms/ios/' + projectName) ? projectName : 'App';
+  return './platforms/ios/' + dirName + '/' + dirName + '-Info.plist'
 }
 
 module.exports = Utilities;
