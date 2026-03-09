@@ -193,6 +193,8 @@
           </array>
         </config-file>
 
+        <framework src="AppTrackingTransparency.framework" weak="true" />
+
         <!-- Facebook SDK -->
         <podspec>
             <config>
